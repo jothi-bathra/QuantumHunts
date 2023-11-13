@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merged Video</title>
+    <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet">
+</head>
+<body>
+
+<video id="my-video" class="video-js" controls preload="auto" width="640" height="360">
+    <source src="file1.mp4" type="video/mp4">
+    <source src="file2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<button id="replayButton">Replay</button>
+
+<script src="https://vjs.zencdn.net/7.14.3/video.js"></script>
+<script>
+    var player = videojs('my-video');
+    var currentVideo = 'file1.mp4';
+
+    player.on('ended', function () {
+        // Switch to the next video source when the current video ends
+        if (currentVideo === 'file1.mp4') {
+            player.src([
+                { src: 'file2.mp4', type: 'video/mp4' }
+            ]);
+            currentVideo = 'file2.mp4';
+        } else {
+            player.src([
+                { src: 'file1.mp4', type: 'video/mp4' }
+            ]);
+            currentVideo = 'file1.mp4';
+        }
+        player.play(); // Resume playing
+    });
+
+    document.getElementById('replayButton').addEventListener('click', function () {
+        // Reset to the first video when the replay button is clicked
+        player.src([
+            { src: 'file1.mp4', type: 'video/mp4' }
+        ]);
+        currentVideo = 'file1.mp4';
+        player.play(); // Start playing
+    });
+</script>
+
+</body>
+</html>
