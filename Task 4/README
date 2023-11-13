@@ -4,3 +4,15 @@ Task 4 :
 3. Use bootstrap to get started with this task.
 4. Move the final code to your github account and put a link to the Heroku page where the changes can be tested.
 5. Create a readme file and add good documentation on how to run the code
+
+
+Tools and Technologies used:
+HTML, CSS, JS, MongoDB, Flask
+
+1. The survey form gets user input details
+2. The input details are fetched at backend flask framework
+3. The fetched data is stored into mongodb
+4. Email is sent to the mailid fetched using smtplib
+
+The application can be run using the following command:
+python app.py
