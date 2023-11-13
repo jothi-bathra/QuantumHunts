@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Chandra - Official Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .navbar {
+            background-color: #FF69B4; /* Candy Pink */
+        }
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #000000; /* Bold Black */
+        }
+        .navbar-nav .nav-link {
+            color: #000000; /* Bold Black */
+        }
+        .section {
+            padding: 50px 20px;
+        }
+        .hero-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery-img:hover {
+            transform: scale(1.1);
+        }
+        .about-text {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #555;
+        }
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .btn-primary {
+            background-color: #1E90FF; /* Candy Blue */
+            border-color: #1E90FF; /* Candy Blue */
+        }
+        .btn-primary:hover {
+            background-color: #007acc; /* Darker Candy Blue */
+            border-color: #007acc; /* Darker Candy Blue */
+        }
+        h2 {
+            color: #1E90FF; /* Candy Blue */
+            font-weight: bold;
+        }
+        .footer {
+            background-color: #2C3E50; /* Dark Candy Blue */
+            color: #ecf0f1; /* Light Grayish White */
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Abhishek Chandra</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero-section">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery-section">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-section">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-section">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="hero-section" class="section">
+        <div class="container">
+            <h1 class="text-center text-primary">Welcome to the Official Website of Abhishek Chandra</h1>
+            <img src="https://img.freepik.com/free-photo/low-angle-girl-holding-camera_23-2150903247.jpg?t=st=1699838874~exp=1699842474~hmac=f5cf73195530f9cea261f00697fe529f34fe4cb4551ddd372515ed48f218600b&w=996" alt="Abhishek Chandra" class="hero-img">
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div id="gallery-section" class="section">
+        <div class="container">
+            <h2 class="text-center">Photo Gallery</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://img.freepik.com/free-photo/young-woman-looking-lamp_755757-11.jpg?w=360&t=st=1699838096~exp=1699838696~hmac=b42f72e482c05d271b84563cfac70b05e156963298ec99a3405a2ce1fe953b7f" alt="Photo 1" class="gallery-img">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://img.freepik.com/free-photo/young-woman-reading-book-home_755757-20.jpg?w=360&t=st=1699838652~exp=1699839252~hmac=cff74240748af1bd1678b3090fda2d09d01448e245028229bb14a68a3dfd7ffb" alt="Photo 2" class="gallery-img">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://img.freepik.com/free-photo/young-woman-eyeglasses-reading-book-cozy-living-room_755757-5.jpg?w=360&t=st=1699838700~exp=1699839300~hmac=1a482a274e8c9b732d8421d87da090d903579af7b1286304b3ce8a8a6378851a" alt="Photo 3" class="gallery-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about-section" class="section">
+        <div class="container">
+            <h2 class="text-center text-success">About Abhishek Chandra</h2>
+            <p class="about-text">Capturing moments in exquisite detail, our photography brand blends artistry with technology to deliver stunning visual narratives. From weddings to landscapes, we specialize in crafting timeless images that evoke emotion and tell compelling stories. With a keen eye for composition and a commitment to quality, we transform fleeting moments into enduring memories.</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact-section" class="section">
+        <div class="container">
+            <h2 class="text-center text-danger">Contact Abhishek Chandra</h2>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>Location: No. 123, Airport Road, Coimbatore-41 <br>Contact: 12345567891<br>Email: abishekchandra@gmail.com</p>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
