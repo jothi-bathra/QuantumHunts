@@ -48,7 +48,7 @@ def send_registration_email(name, email):
         server.starttls()
 
         # Login to the Gmail account
-        server.login('jothibathra22@gmail.com', 'mnzrestaepdbacmz')
+        server.login('jothibathra22@gmail.com', '')
 
         # Send the email
         server.sendmail('jothibathra22@gmail.com', email, msg.as_string())
